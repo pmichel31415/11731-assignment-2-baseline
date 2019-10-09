@@ -53,3 +53,7 @@ For the simple baselines provided here, the scores are as follows:
 |-|-|-|-|
 |Dev|31.86|31.03|17.94|
 |Test|31.53|32.22|21.21|
+
+---
+
+This code is adapted from a tutorial I wrote for the JSALT 2019 summer school: https://github.com/pmichel31415/jsalt-2019-mt-tutorial
