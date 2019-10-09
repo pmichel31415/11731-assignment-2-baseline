@@ -46,3 +46,10 @@ cat [out file] | sacrebleu -w 2 [ref file]
 ```
 
 Note that both output and reference file should be detokenized. Sacrebleu will perform its own tokenization. This is to make sure that the BLEU scores are comparable irrespective of the tokenization you use in your model. The `-w 2` means that we want BLEU score with 2 decimals, although keep in mind that BLEU differences smaller than 0.5 are unlikely to be statistically significant (on a scale of 100).
+
+For the simple baselines provided here, the scores are as follows:
+
+||en-af|en-ts|en-nso|
+|-|-|-|-|
+|Dev|31.86|31.03|17.94|
+|Test|31.53|32.22|21.21|
