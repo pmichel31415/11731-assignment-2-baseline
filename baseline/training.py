@@ -186,7 +186,9 @@ def main():
     # Optimizer
     optim = th.optim.Adam(model.parameters(), lr=args.lr, betas=(0.9, 0.98))
     # Learning rate schedule
-    lr_schedule = None  # inverse_sqrt_schedule(2000, args.lr)
+    lr_schedule = None
+    if args.inverse_sqrt_schedule:
+        inverse_sqrt_schedule(2000, args.lr)
     # Dataloader
     train_loader = MTDataLoader(
         train_data,
