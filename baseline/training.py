@@ -40,6 +40,7 @@ def load_data(src_lang, tgt_lang, cached_folder="assignment2/data", overwrite=Fa
 def get_args():
     parser = argparse.ArgumentParser("Train an MT model")
     # General params
+    parser.add_argument("--seed", type=int, default=11731)
     parser.add_argument("--src", type=str, default="en", choices=["en"])
     parser.add_argument("--tgt", type=str, default="af",
                         choices=["af", "ts", "nso"])
@@ -166,6 +167,8 @@ def evaluate_ppl(model, dataloader):
 def main():
     # Command line arguments
     args = get_args()
+    # Set random seed
+    th.manual_seed(args.seed)
     # data
     vocab, train_data, valid_data = load_data(args.src, args.tgt)
     # Model
