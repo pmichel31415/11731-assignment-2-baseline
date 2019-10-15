@@ -51,8 +51,8 @@ For the simple baselines provided here, the scores are as follows:
 
 ||en-af|en-ts|en-nso|
 |-|-|-|-|
-|Dev|31.86|31.03|17.94|
-|Test|31.53|32.22|21.21|
+|Dev|31.39|32.10|18.27|
+|Test|31.38|33.27|21.20|
 
 ---
 
