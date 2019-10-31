@@ -54,6 +54,16 @@ For the simple baselines provided here, the scores are as follows:
 |Dev|31.39|32.10|18.27|
 |Test|31.38|33.27|21.20|
 
+### Variance in Scores
+
+Since there is some variance in the final BLEU score depending on the random seed/environment, we also provide the average BLEU over 5 random reruns for each language pair (standard deviation in parentheses):
+
+||en-af|en-ts|en-nso|
+|-|-|-|-|
+|Dev|31.12 (±1.35)|32.86 (±1.28)|17.68 (±0.47)|
+|Test|30.80 (±0.76)|32.63 (±1.31)|21.14 (±0.44)|
+
+
 ---
 
 This code is adapted from a tutorial I wrote for the JSALT 2019 summer school: https://github.com/pmichel31415/jsalt-2019-mt-tutorial
